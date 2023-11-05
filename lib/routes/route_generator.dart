@@ -1,5 +1,6 @@
 import 'package:e_shop/screens/auth/hero_page.dart';
 import 'package:e_shop/screens/auth/sign_in_page.dart';
+import 'package:e_shop/screens/auth/sign_up_page.dart';
 import 'package:e_shop/screens/home/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,9 @@ class RouteGenerator {
 
       case '/sign_in':
         return MaterialPageRoute(builder: (_) => const SignInPage());
+    case '/sign_up':
+        return MaterialPageRoute(builder: (_) => const SignUpPage());
+    
     }
   }
 }

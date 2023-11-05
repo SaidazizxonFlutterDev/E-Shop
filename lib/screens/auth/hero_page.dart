@@ -5,14 +5,9 @@ import 'package:e_shop/widgets/sign_up_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class HeroPage extends StatefulWidget {
+class HeroPage extends StatelessWidget {
   const HeroPage({super.key});
 
-  @override
-  State<HeroPage> createState() => _HeroPageState();
-}
-
-class _HeroPageState extends State<HeroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +28,10 @@ class _HeroPageState extends State<HeroPage> {
               child: const SignInButton(),
             ),
             SizedBox(height: 30.h),
-            SignUpButton(color: ColorConst.kSecondary),
+            InkWell(
+              onTap: () => Navigator.pushNamed(context, '/sign_up'),
+              child: SignUpButton(color: ColorConst.kSecondary),
+            ),
           ],
         ),
       ),

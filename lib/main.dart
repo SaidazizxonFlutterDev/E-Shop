@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      initialRoute: '/hero_page',
+      initialRoute: '/sign_up',
       onGenerateRoute: (settings) => RouteGenerator.generateRoute(settings),
     ),
     );
